@@ -1,4 +1,4 @@
-#include "person.h"
+#include "student.h"
 
 Student::Student(std::string first_name, std::string last_name, Department major)
     : Person(first_name, last_name),
@@ -11,3 +11,4 @@ Department Student::get_major() {
 
 std::string Student::to_string() {
     return Person::to_string() + " is a student majoring in " + department_to_string(get_major()) + ".";
+}
